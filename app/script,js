@@ -1,0 +1,84 @@
+function fun(){
+
+ 
+     var b= document.getElementById("email");
+    
+      var c= document.getElementById("password");
+    if (b.value =="" || b.length == 0){
+       
+        document.getElementById("text3").innerHTML=" შეიყვანეთ ელ. ფოსტა";
+        document.getElementById("text3").style.color="red";
+        
+        
+    }else if(c.value =="" || c.length == 0) {
+        document.getElementById("text3").innerHTML="";
+        document.getElementById("text4").innerHTML="სწორია";
+        document.getElementById("text4").style.color="green";
+        document.getElementById("text5").innerHTML="შეიყვანეთ პაროლი";
+        document.getElementById("text5").style.color="red";
+    
+       
+    }else {
+        document.getElementById("text5").innerHTML=""
+        document.getElementById("text6").innerHTML="სწორია";
+        document.getElementById("text6").style.color="green";
+        window.alert("მონაცემები სწორია");
+    }
+}
+
+
+function validation(){
+   var a =document.getElementById("name").value;
+   var x = document.getElementById("email1").value;
+   var y = document.getElementById("password1").value;
+   
+   if (a.value == "" || a.length == 0 ){
+   document.getElementById("text10").innerHTML="შეიყვანეთ სახელი გვარი";
+ 
+} else if (x.value =="" || x.length == 0){
+    document.getElementById("text10").innerHTML="";
+ 
+    document.getElementById("text11").innerHTML="სწორია";
+    document.getElementById("text12").innerHTML=" შეიყვანეთ ელ. ფოსტა";
+    
+}else if (y.value == "" || y.length == 0 ) {
+    document.getElementById("text12").innerHTML="";
+    document.getElementById("text13").innerHTML="სწორია";
+    document.getElementById("text14").innerHTML="შეიყვანეთ პაროლი";
+
+   
+}else {
+    document.getElementById("text14").innerHTML=""
+    document.getElementById("text15").innerHTML="სწორია";
+    window.alert ("თქვენ წარმატებით გააიარეთ რეგისტრაცია!")
+}
+}
+
+var d=document.querySelector(".toggle");
+var text=document.querySelector(".text");
+function onoff(){
+    d.classList.toggle('active');
+    if (d.classList.contains('active')){
+        
+        document.getElementById("main_cont").style.display="none";
+        
+        document.getElementById("main_cont2").style.display="block";
+     document.body.style.backgroundColor="black";
+        
+       
+
+      
+      
+     
+        
+    }
+    else {
+       
+        document.getElementById("main_cont").style.display="block";
+        
+        document.getElementById("main_cont2").style.display="none";
+        document.body.style.backgroundColor="white";
+
+       
+    }
+}
