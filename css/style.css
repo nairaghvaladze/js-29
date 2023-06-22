@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Inter';
+    src : url(../fonts/Inter-Regular.ttf);
+ }
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .main_div2{margin-top:100px;    }
+    .container2 {position: absolute;
+    left: 70% !important;
+top:5% !important}
+.container1 {position: absolute;
+    left: 70% !important;
+top:5% !important}
+.img1 {width: 100% !important;}
+}
+h4{ font-family: 'Inter';
+    color: black;
+    font-weight: 700;
+}
+h1 {
+    font-family: 'Inter';
+    color: black;
+    font-weight: 700;
+}
+.text1{
+    font-family: 'Inter';
+    color: grey;
+    font-size: 22px;
+}
+label {
+    font-family: 'Inter';
+    color: black;
+    font-weight: 700;
+    font-size:16px;
+}
+::placeholder {
+    color: grey;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+#res {
+   background-color: rgba(142, 238, 64, 0.932);
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 16px;
+}
+.cont1{
+  position: absolute;
+  right:790px;  
+  font-family: 'Inter';
+  font-weight: bold;
+}
+
+#res1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: grey;
+}
+.text8 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+}
+a{
+    text-decoration: none;
+}
+span {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+#h4{
+    font-family: 'Inter';
+    color: white;
+    font-weight: 700;
+
+}
+#h1{
+    font-family: 'Inter';
+    color: white;
+    font-weight: 700;
+}
+#p1{
+    font-family: 'Inter';
+    color: grey;
+    font-size: 16px;
+}
+#lab1{
+font-family: 'Inter';
+color: white;
+font-weight: bold;
+font-size:16px;}
+#res2{
+    background-color: rgb(197, 241, 35);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    border: none;
+}
+#res3{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: grey;
+
+}
+#p2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+}
+#span{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.container2 {
+    
+    position: absolute;
+    top:6%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 50px;
+}
+.container1 {
+    
+    position: absolute;
+    top:7%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 50px;
+}
+.container2 .toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 35px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.container1 .toggle1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+.container2 .toggle.active {
+    background-color:grey;
+}
+.container1 .toggle1.active {
+    background-color:grey;
+}
+.container2 .toggle .toggle-button {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 115px;
+    height:40px;
+    box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 24.5px;
+    background: #FFFFFF;
+   
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+}
+.container1 .toggle1 .toggle-button1 {
+    position: absolute;
+    top:0px;
+   right: 0;
+    width: 115px;
+    height:40px;
+    box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 24.5px;
+    background: #535252;
+   
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.toggle::before {
+    content: "light   dark";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    word-spacing: 50px;
+   box-sizing: border-box;
+  
+
+}
+.toggle1::before {
+    content: "light   dark";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    word-spacing: 50px;
+   box-sizing: border-box;
+
+}
+.container2 .toggle.active .toggle-button {
+    left:111px;
+    
+}
+.container1 .toggle1.active .toggle-button1 {
+    left:111px;
+    
+}
+.text {
+    position: absolute;
+    
+
+    left:0;
+    color: #747474;
+}
+.text111 {
+    position: absolute;
+    
+
+    left:0;
+    color: #747474;
+}
